@@ -13,27 +13,32 @@ query RecipesQuery {
 
 ---
 
-```query AuthorsQuery {
+```
+query AuthorsQuery {
 	authors {
 		name
 		id
 		verified
 	}
-}```
+}
+```
 
 ---
 
-```query ReviewsQuery {
+```
+query ReviewsQuery {
 	reviews {
 		id
 		rating
 		comment
 	}
-}```
+}
+```
 
 ---
 
-```query ReviewQuery ($id: ID!) {
+```
+query ReviewQuery ($id: ID!) {
 	review(id: $id) {
 		rating
 		recipe {
@@ -50,17 +55,21 @@ query RecipesQuery {
 			verified
 		}
 	}
-}```
+}
+```
 
 Query variables:
 
-```{
+```
+{
 	"id": "1"
-}```
+}
+```
 
 ---
 
-```query RecipeQuery ($id: ID!) {
+```
+query RecipeQuery ($id: ID!) {
 	recipe(id: $id) {
 		title
 		reviews {
@@ -68,17 +77,21 @@ Query variables:
 			rating
 		}
 	}
-}```
+}
+```
 
 Query variables:
 
-```{
+```
+{
 	"id": "1"
-}```
+}
+```
 
 ---
 
-```query AuthorQuery ($authorId: ID!) {
+```
+query AuthorQuery ($authorId: ID!) {
 	author(id: $authorId) {
 		name
 		reviews {
@@ -86,63 +99,78 @@ Query variables:
 			rating
 		}
 	}
-}```
+}
+```
 
 Query variables:
 
-```{
+```
+{
 	"authorId": "3"
-}```
+}
+```
 
 ---
 
-```mutation DeleteMutation ($deleteRecipeId: ID!) {
+```
+mutation DeleteMutation ($deleteRecipeId: ID!) {
 	deleteRecipe(id: $deleteRecipeId) {
 		id
 		title
 	}
-}```
+}
+```
 
 Query variables:
 
-```{
+```
+{
 	"deleteRecipeId": "1"
-}```
+}
+```
 
 ---
 
-```mutation AddRecipeMutation ($recipe: AddRecipe!) {
+```
+mutation AddRecipeMutation ($recipe: AddRecipe!) {
 	addRecipe(recipe: $recipe) {
 		id
 		title
 		ingredients
 	}
-}```
+}
+```
 
 Query variables:
 
-```{
+```
+{
 	"recipe": {
 		"title": "A new recipe",
 		"ingredients": ["test this", "test that"]
 	}
-}```
+}
+```
 
 ---
 
-```mutation updateRecipeMutation ($updateRecipeId: ID!, $edits: EditRecipe!) {
+```
+mutation updateRecipeMutation ($updateRecipeId: ID!, $edits: EditRecipe!) {
 	updateRecipe(id: $updateRecipeId, edits: $edits) {
 		title
 	}
-}```
+}
+```
 
 Query variables:
 
-```{  
+```
+{  
     "updateRecipeId": "1",
     "edits": {
         "title": "lol, roadkill"
     }
-}```
+}
+```
 
 ---
