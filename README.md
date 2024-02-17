@@ -2,6 +2,7 @@
 This GraphQL API is built with Apollo Server. I built this to sharpen up on GraphQL
 
 ## My Queries and Mutations
+### Recipes Query
 ```
 query RecipesQuery {
 	recipes {
@@ -11,7 +12,7 @@ query RecipesQuery {
 }
 ```
 
----
+### Authors Query
 
 ```
 query AuthorsQuery {
@@ -23,7 +24,7 @@ query AuthorsQuery {
 }
 ```
 
----
+### Reviews Query
 
 ```
 query ReviewsQuery {
@@ -35,7 +36,7 @@ query ReviewsQuery {
 }
 ```
 
----
+### Review Query
 
 ```
 query ReviewQuery ($id: ID!) {
@@ -66,7 +67,7 @@ Query variables:
 }
 ```
 
----
+### Recipe Query
 
 ```
 query RecipeQuery ($id: ID!) {
@@ -88,7 +89,7 @@ Query variables:
 }
 ```
 
----
+### Author Query
 
 ```
 query AuthorQuery ($authorId: ID!) {
@@ -110,10 +111,10 @@ Query variables:
 }
 ```
 
----
+### Delete Recipe Mutation
 
 ```
-mutation DeleteMutation ($deleteRecipeId: ID!) {
+mutation DeleteRecipeMutation ($deleteRecipeId: ID!) {
 	deleteRecipe(id: $deleteRecipeId) {
 		id
 		title
@@ -129,7 +130,7 @@ Query variables:
 }
 ```
 
----
+### Add Recipe Mutation
 
 ```
 mutation AddRecipeMutation ($recipe: AddRecipe!) {
@@ -152,7 +153,7 @@ Query variables:
 }
 ```
 
----
+### Update Recipe Mutation
 
 ```
 mutation updateRecipeMutation ($updateRecipeId: ID!, $edits: EditRecipe!) {
@@ -172,5 +173,3 @@ Query variables:
     }
 }
 ```
-
----
