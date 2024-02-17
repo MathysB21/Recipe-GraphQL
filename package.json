@@ -1,0 +1,18 @@
+{
+  "name": "recipe-graphql",
+  "version": "1.0.0",
+  "description": "This GraphQL API is built with Apollo Server. I built this to sharpen up on GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "graphql": "^16.8.1",
+    "nodemon": "^3.0.3"
+  },
+  "type": "module"
+}
