@@ -83,3 +83,7 @@ const { url } = await startStandaloneServer(server, {
 })
 
 console.log(`Server ready at: ${url}`);
+
+// TODO:
+// [-] Add mutation resolvers and schema's for the reviews and authors too
+// [-] Connect MongoDB instead of temp local DB

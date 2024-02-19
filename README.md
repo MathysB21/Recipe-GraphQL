@@ -169,7 +169,7 @@ Query variables:
 {  
     "updateRecipeId": "1",
     "edits": {
-        "title": "lol, roadkill"
+        "title": "burnt chicken"
     }
 }
 ```
