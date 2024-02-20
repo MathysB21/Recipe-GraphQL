@@ -1,6 +1,24 @@
 # Recipe-GraphQL
 This GraphQL API is built with Apollo Server. I built this to sharpen up on GraphQL
 
+## About
+I built this GraphQL API with Apollo server and a hardcoded database to test my skills and practice. 
+I have built this to query a Database of recipes and have made multiple queries and mutations to request and modify the data. You can find the queries and mutations below.
+
+## Requirements
+You will need to have Node.js installed, once installed you can open a terminal in the project folder and run the following:
+
+```
+npm install
+```
+This will install all the necessary packages
+
+## How to run
+As soon as all the packages are installed, you can run the following command and then navigate to localhost:5000 to see the Apollo Server page
+```
+npm run start
+```
+
 ## My Queries and Mutations
 ### Recipes Query
 ```
